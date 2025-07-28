@@ -1,70 +1,48 @@
-# Getting Started with Create React App
+# 🎯 Quiz App – CausalFunnel Internship Assignment
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a web-based quiz application developed for the Software Engineer Intern task at **CausalFunnel**. The app lets users take a timed quiz of 15 questions, fetched from an external API, and shows the result with detailed feedback.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## ✅ Features
 
-### `npm start`
+- 📧 Email verification before starting the quiz
+- 🧠 Fetches 15 multiple-choice questions from [Open Trivia DB API](https://opentdb.com/api.php?amount=15)
+- ⏳ 30-minute countdown timer (auto-submit when time ends)
+- 🔁 Randomized answer options for every question
+- 🧭 Horizontal overview panel:
+  - ✅ **Green (Attempted)**
+  - 🟦 **Blue (Viewed, not attempted)**
+  - ⬜ **Grey (Not viewed)**
+- 🔢 Shows count of answered questions (e.g., 5/15)
+- 📊 Final report showing:
+  - The user's answer (green/red)
+  - The correct answer for every question
+- 📱 Fully responsive and works on latest versions of Chrome, Firefox, Safari, and Edge
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🧪 Live Demo
 
-### `npm test`
+👉 [Click to View Live Quiz App](https://aquamarine-valkyrie-ce7613.netlify.app)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 🧠 How It Works
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. User enters an email address to start the quiz.
+2. 15 random questions are fetched from the Open Trivia API.
+3. Timer starts from 30:00 and auto-submits after time ends.
+4. Users can navigate to any question using the horizontal panel.
+5. Overview panel shows which questions were visited or attempted.
+6. Final report is shown with score and answers comparison.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🚀 How to Run Locally
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```bash
+git clone https://github.com/poojitha-contributes/Quiz-App.git
+cd Quiz-App
+npm install
+npm start
