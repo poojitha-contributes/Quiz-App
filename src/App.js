@@ -90,7 +90,7 @@ function App() {
             placeholder="Enter your email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            style={{ padding: "14px", fontSize: "18px", width: "100%", marginBottom: "20px", borderRadius: "5px", border: "1px solid #ccc" }}
+            style={{ padding: "14px", fontSize: "18px", width: "100%",maxWidth: "400px", marginBottom: "20px", borderRadius: "5px", border: "1px solid #ccc" }}
           />
           <button onClick={startQuiz} style={{ width: "100%", padding: "14px", fontSize: "18px", backgroundColor: "black", color: "white", border: "none", borderRadius: "5px" }}>Start Quiz</button>
         </div>
