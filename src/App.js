@@ -83,8 +83,8 @@ function App() {
   if (!quizStarted) {
     return (
       <div className="App" style={{ background: "linear-gradient(to right, #0f2027, #203a43, #2c5364)", minHeight: "100vh", padding: "0", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center" }}>
-        <h1 style={{ color: "white", marginBottom: "30px", animation: "fadeIn 1s" }}>Quiz App</h1>
-        <div style={{ background: "white", padding: 40, borderRadius: 10, width: "90%", maxWidth: "350px", textAlign: "center", animation: "slideUp 1s ease" }}>
+        <h1 style={{ color: "white", marginBottom: "20px", animation: "fadeIn 1s" }}>Quiz App</h1>
+        <div style={{ background: "white", padding: 30, borderRadius: 10, width: "90%", maxWidth: "350px", textAlign: "center", animation: "slideUp 1s ease" }}>
           <input
             type="email"
             placeholder="Enter your email"
