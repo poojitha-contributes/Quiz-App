@@ -84,13 +84,13 @@ function App() {
     return (
       <div className="App" style={{ background: "linear-gradient(to right, #0f2027, #203a43, #2c5364)", minHeight: "100vh", padding: "0", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center" }}>
         <h1 style={{ color: "white", marginBottom: "30px", animation: "fadeIn 1s" }}>Quiz App</h1>
-        <div style={{ background: "white", padding: 40, borderRadius: 10, width: "90%", maxWidth: 500, textAlign: "center", animation: "slideUp 1s ease" }}>
+        <div style={{ background: "white", padding: 40, borderRadius: 10, width: "90%", maxWidth: "350px", textAlign: "center", animation: "slideUp 1s ease" }}>
           <input
             type="email"
             placeholder="Enter your email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            style={{ padding: "14px", fontSize: "18px", width: "100%",maxWidth: "400px", marginBottom: "20px", borderRadius: "5px", border: "1px solid #ccc" }}
+            style={{ padding: "14px", fontSize: "18px", width: "80%",maxWidth: "400px", marginBottom: "20px", borderRadius: "5px", border: "1px solid #ccc" }}
           />
           <button onClick={startQuiz} style={{ width: "100%", padding: "14px", fontSize: "18px", backgroundColor: "black", color: "white", border: "none", borderRadius: "5px" }}>Start Quiz</button>
         </div>
